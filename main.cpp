@@ -1,3 +1,4 @@
+#include "pch.h"
 #include <iostream>
 #include <stdexcept>
 
@@ -126,15 +127,15 @@ int main(int argc, char **argv) {
 	cout << "hello world" << endl;
 
 
-	// --- удалить при запуске на компьютере ---
-	//argc = 6;
-	//argv = new char *[argc];
-	//argv[1] = (char *) "1";
-	//argv[2] = (char *) "+";
-	//argv[3] = (char *) "2";
-	//argv[4] = (char *) "*";
-	//argv[5] = (char *) "4+1";
-	// -----------------------------------------
+	
+	argc = 6;
+	argv = new char *[argc];
+	argv[1] = (char *) "1";
+	argv[2] = (char *) "+";
+	argv[3] = (char *) "2";
+	argv[4] = (char *) "*";
+	argv[5] = (char *) "4+1";
+
 
 
 	string str = "";
@@ -148,5 +149,4 @@ int main(int argc, char **argv) {
 	cout << "result: " << result << endl;
 
 	return 0;
-	system("pause");
 }
